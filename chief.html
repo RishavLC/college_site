@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valer College Template</title>
+    <style>
+/* Add this to your CSS file */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px); /* Initially slides content downwards */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0); /* Moves content to its original position */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    background-color: #231d49;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.hero-image img {
+    content: icon;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    flex: auto;
+    max-width: 500px;
+    padding-left: 20px;
+}
+
+.hero-text h1 {
+    border: #231d49;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f6be06;
+}
+
+.hero-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+h2{
+    color: #ededeb;
+}
+    </style>
+</head>
+
+<body>
+   
+    <!-- Hero Section -->
+    <section class="hero hidden">
+        <div class="hero-image">
+            <img src="Main/chief.jpg" alt="Person Image">
+        </div>
+        <div class="hero-text">
+            <h1>Message from Campus Chief:</h1>
+            <p>
+                Nowadays, educational institutions serve as more than just ameans 
+                of acquiring information and knowledge. They provideopportunities 
+                for individuals to come together and share theirthoughts and ideas.
+                 At Himalaya Darshan, we strongly believe thatthe true power of 
+                 education lies in the collaboration betweenlearners rather than
+                  solely relying on the knowledge of experts.Our institution provides
+                   a stress-free learning environment thatpromotes creativity and
+                    critical thinking. We have always beencommitted to guiding and 
+                    shaping the minds of our students in apositive way. Our main focus
+                     is on creating future leaders who arepassionate about making a 
+                     positive impact on the world. As theCampus Chief of Himalaya Darshan, 
+                     I am dedicated to ensuring that our institution continues to uphold these values.
+            </p>
+                <pre>
+                    <h2>Bharat Sapkota
+Campus Chief</h2>
+                </pre>
+         </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    });
+
+    // Observe all elements with the class "hidden"
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+});
+
+    </script>
+</body>
+
+</html>

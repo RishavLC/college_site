@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      font-family: Arial, sans-serif;
+    }
+  
+    th {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    td {
+      text-align: center;
+      padding: 8px;
+    }
+  
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  
+    th, td {
+      border: 1px solid #ddd;
+    }
+  
+    .semester-title {
+      background-color: #333;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      padding: 12px;
+    }
+  
+    .total-row {
+      font-weight: bold;
+      background-color: #e0e0e0;
+    }
+  </style>
+  
+  <table>
+    <tr>
+      <!-- Block 1: Semesters I and II -->
+      <td width="25%" valign="top">
+        <table>
+          <thead>
+            <tr><th colspan="3" class="semester-title">SEMESTER I</th></tr>
+            <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>CSC109</td><td>Computer Fundamental and Application</td><td>3</td></tr>
+            <tr><td>CSC110</td><td>C Programming</td><td>3</td></tr>
+            <tr><td>CSC111</td><td>Mathematics I</td><td>3</td></tr>
+            <tr><td>CSC112</td><td>Digital Logic</td><td>3</td></tr>
+            <tr><td>CSC113</td><td>Physics</td><td>3</td></tr>
+            <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+          </tbody>
+        </table><br><br>
+  
+        <table>
+          <thead>
+            <tr><th colspan="3" class="semester-title">SEMESTER II</th></tr>
+            <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>CSC114</td><td>Object-Oriented Programming</td><td>3</td></tr>
+            <tr><td>CSC115</td><td>Mathematics II</td><td>3</td></tr>
+            <tr><td>CSC116</td><td>Statistics I</td><td>3</td></tr>
+            <tr><td>CSC117</td><td>Microprocessor</td><td>3</td></tr>
+            <tr><td>CSC118</td><td>Data Structures</td><td>3</td></tr>
+            <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+          </tbody>
+        </table>
+      </td>
+  
+      <!-- Block 2: Semesters III and IV -->
+      <td width="25%" valign="top">
+        <table>
+          <thead>
+            <tr><th colspan="3" class="semester-title">SEMESTER III</th></tr>
+            <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>CSC211</td><td>Operating System</td><td>3</td></tr>
+            <tr><td>CSC212</td><td>Mathematics III</td><td>3</td></tr>
+            <tr><td>CSC213</td><td>Data Communication</td><td>3</td></tr>
+            <tr><td>CSC214</td><td>Computer Graphics</td><td>3</td></tr>
+            <tr><td>CSC215</td><td>Web Technology</td><td>3</td></tr>
+            <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+          </tbody>
+        </table><br>
+  
+        <table>
+          <thead>
+            <tr><th colspan="3" class="semester-title">SEMESTER IV</th></tr>
+            <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>CSC216</td><td>Database Management System</td><td>3</td></tr>
+            <tr><td>CSC217</td><td>Microprocessor II</td><td>3</td></tr>
+            <tr><td>CSC218</td><td>Artificial Intelligence</td><td>3</td></tr>
+            <tr><td>CSC219</td><td>Computer Networks</td><td>3</td></tr>
+            <tr><td>CSC220</td><td>Software Engineering</td><td>3</td></tr>
+            <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+          </tbody>
+        </table>
+      </td>
+  
+      <!-- Block 3: Semesters V and VI -->
+      <td width="25%" valign="top">
+        <table>
+          <thead>
+            <tr><th colspan="3" class="semester-title">SEMESTER V</th></tr>
+            <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>CSC311</td><td>Web Programming</td><td>3</td></tr>
+            <tr><td>CSC312</td><td>Advanced Java</td><td>3</td></tr>
+            <tr><td>CSC313</td><td>Embedded Systems</td><td>3</td></tr>
+            <tr><td>CSC314</td><td>Cloud Computing</td><td>3</td></tr>
+            <tr><td>CSC315</td><td>Mathematics IV</td><td>3</td></tr>
+            <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+          </tbody>
+        </table><br>
+  
+        <table>
+          <thead>
+            <tr><th colspan="3" class="semester-title">SEMESTER VI</th></tr>
+            <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>CSC316</td><td>Machine Learning</td><td>3</td></tr>
+            <tr><td>CSC317</td><td>Big Data</td><td>3</td></tr>
+            <tr><td>CSC318</td><td>Project Work</td><td>3</td></tr>
+            <tr><td>CSC319</td><td>Elective I</td><td>3</td></tr>
+            <tr><td>CSC320</td><td>Elective II</td><td>3</td></tr>
+            <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+          </tbody>
+        </table>
+      </td>
+  
+      <!-- Block 4: Semesters VII and VIII -->
+      <td width="25%" valign="top">
+        <table>
+          <thead>
+            <tr><th colspan="3" class="semester-title">SEMESTER VII</th></tr>
+            <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>CSC411</td><td>Advanced Database Management Systems</td><td>3</td></tr>
+            <tr><td>CSC412</td><td>Mobile Application Development</td><td>3</td></tr>
+            <tr><td>CSC413</td><td>Cyber Security</td><td>3</td></tr>
+            <tr><td>CSC414</td><td>Internet of Things</td><td>3</td></tr>
+            <tr><td>CSC415</td><td>Elective III</td><td>3</td></tr>
+            <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+          </tbody>
+        </table>
+  
+        <table>
+          <thead>
+            <tr><th colspan="3" class="semester-title">SEMESTER VIII</th></tr>
+            <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>CSC416</td><td>Entrepreneurship and Innovation</td><td>3</td></tr>
+            <tr><td>CSC417</td><td>Project Management</td><td>3</td></tr>
+            <tr><td>CSC418</td><td>Elective IV</td><td>3</td></tr>
+            <tr><td>CSC419</td><td>Final Year Project</td><td>3</td></tr>
+            <tr><td>CSC420</td><td>Internship</td><td>3</td></tr>
+            <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+  
+</html>

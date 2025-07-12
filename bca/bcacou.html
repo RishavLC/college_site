@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-bottom: 20px;
+          font-family: Arial, sans-serif;
+        }
+      
+        th {
+          background-color: #4CAF50;
+          color: white;
+          text-align: center;
+          padding: 10px;
+        }
+      
+        td {
+          text-align: center;
+          padding: 8px;
+        }
+      
+        tr:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+      
+        th, td {
+          border: 1px solid #ddd;
+        }
+      
+        .semester-title {
+          background-color: #333;
+          color: white;
+          font-weight: bold;
+          font-size: 16px;
+          text-align: center;
+          padding: 12px;
+        }
+      
+        .total-row {
+          font-weight: bold;
+          background-color: #e0e0e0;
+        }
+      </style>
+      
+      <table>
+        <tr>
+          <!-- Block 1: Semesters I and II -->
+          <td width="25%" valign="top">
+            <table>
+              <thead>
+                <tr><th colspan="3" class="semester-title">SEMESTER I</th></tr>
+                <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>BCA 101</td><td>Computer Fundamentals and Applications</td><td>3</td></tr>
+                <tr><td>BCA 102</td><td>Digital Logic</td><td>3</td></tr>
+                <tr><td>BCA 103</td><td>Mathematics I</td><td>3</td></tr>
+                <tr><td>BCA 104</td><td>English I</td><td>3</td></tr>
+                <tr><td>BCA 105</td><td>Programming Logic and Techniques</td><td>3</td></tr>
+                <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+              </tbody>
+            </table>
+      
+            <table>
+              <thead>
+                <tr><th colspan="3" class="semester-title">SEMESTER II</th></tr>
+                <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>BCA 106</td><td>Introduction to C Programming</td><td>3</td></tr>
+                <tr><td>BCA 107</td><td>Discrete Mathematics</td><td>3</td></tr>
+                <tr><td>BCA 108</td><td>Computer Organization</td><td>3</td></tr>
+                <tr><td>BCA 109</td><td>English II</td><td>3</td></tr>
+                <tr><td>BCA 110</td><td>Statistics I</td><td>3</td></tr>
+                <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+              </tbody>
+            </table>
+          </td>
+      
+          <!-- Block 2: Semesters III and IV -->
+          <td width="25%" valign="top">
+            <table>
+              <thead>
+                <tr><th colspan="3" class="semester-title">SEMESTER III</th></tr>
+                <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>BCA 201</td><td>Data Structures</td><td>3</td></tr>
+                <tr><td>BCA 202</td><td>Object Oriented Programming in C++</td><td>3</td></tr>
+                <tr><td>BCA 203</td><td>Operating System</td><td>3</td></tr>
+                <tr><td>BCA 204</td><td>Mathematics II</td><td>3</td></tr>
+                <tr><td>BCA 205</td><td>Statistics II</td><td>3</td></tr>
+                <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+              </tbody>
+            </table><br><br>
+      
+            <table>
+              <thead>
+                <tr><th colspan="3" class="semester-title">SEMESTER IV</th></tr>
+                <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>BCA 206</td><td>Software Engineering</td><td>3</td></tr>
+                <tr><td>BCA 207</td><td>Database Management Systems</td><td>3</td></tr>
+                <tr><td>BCA 208</td><td>Computer Networks</td><td>3</td></tr>
+                <tr><td>BCA 209</td><td>Visual Programming</td><td>3</td></tr>
+                <tr><td>BCA 210</td><td>Mathematics III</td><td>3</td></tr>
+                <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+              </tbody>
+            </table>
+          </td>
+      
+          <!-- Block 3: Semesters V and VI -->
+          <td width="25%" valign="top">
+            <table>
+              <thead>
+                <tr><th colspan="3" class="semester-title">SEMESTER V</th></tr>
+                <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>BCA 301</td><td>Web Technology</td><td>3</td></tr>
+                <tr><td>BCA 302</td><td>Java Programming</td><td>3</td></tr>
+                <tr><td>BCA 303</td><td>Computer Graphics</td><td>3</td></tr>
+                <tr><td>BCA 304</td><td>Introduction to Artificial Intelligence</td><td>3</td></tr>
+                <tr><td>BCA 305</td><td>Mathematics IV</td><td>3</td></tr>
+                <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+              </tbody>
+            </table>
+      
+            <table>
+              <thead>
+                <tr><th colspan="3" class="semester-title">SEMESTER VI</th></tr>
+                <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>BCA 306</td><td>Internet Programming</td><td>3</td></tr>
+                <tr><td>BCA 307</td><td>Network Security</td><td>3</td></tr>
+                <tr><td>BCA 308</td><td>Project Work</td><td>3</td></tr>
+                <tr><td>BCA 309</td><td>Elective I</td><td>3</td></tr>
+                <tr><td>BCA 310</td><td>Elective II</td><td>3</td></tr>
+                <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+              </tbody>
+            </table>
+          </td>
+      
+          <!-- Block 4: Semesters VII and VIII -->
+          <td width="25%" valign="top">
+            <table>
+              <thead>
+                <tr><th colspan="3" class="semester-title">SEMESTER VII</th></tr>
+                <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>BCA 401</td><td>Management Information Systems</td><td>3</td></tr>
+                <tr><td>BCA 402</td><td>Mobile Application Development</td><td>3</td></tr>
+                <tr><td>BCA 403</td><td>Cloud Computing</td><td>3</td></tr>
+                <tr><td>BCA 404</td><td>Cyber Law and IT Ethics</td><td>3</td></tr>
+                <tr><td>BCA 405</td><td>Elective III</td><td>3</td></tr>
+                <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+              </tbody>
+            </table>
+      
+            <table>
+              <thead>
+                <tr><th colspan="3" class="semester-title">SEMESTER VIII</th></tr>
+                <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>BCA 406</td><td>IT Entrepreneurship</td><td>3</td></tr>
+                <tr><td>BCA 407</td><td>Project Management</td><td>3</td></tr>
+                <tr><td>BCA 408</td><td>Elective IV</td><td>3</td></tr>
+                <tr class="total-row"><td colspan="3">Total: 9</td></tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </table>
+      
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website - Labs, Library, and Playground</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .lslider-container {
+            max-width: 1200px;
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .lslide {
+            display: none;
+            flex-direction: row;
+        }
+
+        .lslide.active {
+            display: flex;
+        }
+
+        .limage-section {
+            flex: 1;
+        }
+
+        .limage-section img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .content-section {
+            flex: 1;
+            padding: 40px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .content-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .content-section p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .learn-more-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .learn-more-btn:hover {
+            background-color: #555;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .lslider-container {
+                flex-direction: column;
+            }
+
+            .content-section {
+                padding: 20px;
+            }
+
+            .content-section h1 {
+                font-size: 2em;
+            }
+
+            .content-section p {
+                font-size: 1em;
+            }
+        }
+
+        /* Navigation buttons */
+        .lprev, .lnext {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .lprev {
+            left: 10px;
+        }
+
+        .lnext {
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lslider-container">
+        <div class="lslide active">
+            <div class="limage-section">
+                <img src="dowm.jpg" alt="College Building">
+            </div>
+            <div class="content-section">
+                <h1>Our Schools</h1>
+                <p>Explore our various schools and institutes that offer diverse programs to cater to a wide range of academic interests.</p>
+                <a href="#" class="learn-more-btn">Learn about our schools</a>
+            </div>
+        </div>
+        <div class="lslide">
+            <div class="limage-section">
+                <img src="library.jpg" alt="Library">
+            </div>
+            <div class="content-section">
+                <h1>Our Library</h1>
+                <p>Our library offers a wide range of books and resources to support your studies and research.</p>
+                <a href="#" class="learn-more-btn">Learn about our library</a>
+            </div>
+        </div>
+        <div class="lslide">
+            <div class="limage-section">
+                <img src="lab3.jpg" alt="Lab">
+            </div>
+            <div class="content-section">
+                <h1>Our Lab</h1>
+                <p>Our lab is equipped with state-of-the-art technology to support hands-on learning and innovation.</p>
+                <a href="#" class="learn-more-btn">Learn about our lab</a>
+            </div>
+        </div>
+        <div class="lslide">
+            <div class="limage-section">
+                <img src="game2.jpg" alt="Playground">
+            </div>
+            <div class="content-section">
+                <h1>Our Playground</h1>
+                <p>Our well-maintained playground is perfect for sports and relaxation.</p>
+                <a href="#" class="learn-more-btn">Learn about our playground</a>
+            </div>
+        </div>
+        <!-- Navigation Buttons -->
+        <button class="lprev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="lnext" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <script>
+        let currentSlide2 = 0;
+        const lslides = document.querySelectorAll('.lslide');
+
+        function showSlide(index) {
+            lslides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+        }
+
+        function changeSlide(direction) {
+            currentSlide2 += direction;
+            if (currentSlide2 < 0) {
+                currentSlide2 = lslides.length - 1;
+            } else if (currentSlide2 >= lslides.length) {
+                currentSlide2 = 0;
+            }
+            showSlide(currentSlide2);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDC College</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="hdc.png" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img src="hdc.png" alt="Logo" class="logo" />
+
+        <h1 class="college-name">HIMALAYA DARSHAN COLLEGE</h1>
+      </div>
+      <div class="email">
+        Email: himalayadarshan5@gmail.com <br />
+        Phone No.: 021-590471
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="notice.html">Events</a></li>
+        <li>
+          <a>Faculty</a>
+          <ul>
+            <li><a href="/bim/bim.html">BIM</a></li>
+            <li><a href="/bca/bca.html">BCA</a></li>
+            <li><a href="/bhm/bhm.html">BHM</a></li>
+            <li><a href="/csit/csit.html">CSIT</a></li>
+            <li><a href="/bbs/bbs.html">BBS</a></li>
+          </ul>
+        </li>
+        <li class="register">
+          <a href="register.html" target="_blank">Register</a>
+        </li>
+        <!-- <div class="register">
+                <a href="register.html" target="_blank" style="color: black;">Register</a>
+            </div> -->
+        <button id="toggleButton" class="toggle-button">Light</button>
+      </ul>
+    </nav>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">
+          <img src="front.jpg" alt="Slide 1" />
+          <div class="caption">
+            <h2>Hdc</h2>
+            <p>Tribhuwan Affilated Collage for Students</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="hall2.jpg" alt="Slide 2" />
+          <div class="caption">
+            <h2>Hall</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="lab.png" alt="Slide 3" />
+          <div class="caption">
+            <h2>Lab</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="hall33l.jpg" alt="Slide 4" />
+          <div class="caption">
+            <h2>Seminar</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="about.png" alt="Slide 4" />
+          <div class="caption">
+            <h2>Teachers</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="dl.jpg" alt="Slide 6" />
+          <div class="caption">
+            <h2>Circuit</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="certificate.png" alt="Slide 7" />
+          <div class="caption">
+            <h2>Acheivement</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="certificate1.png" alt="Slide 8" />
+          <div class="caption">
+            <h2>Acheivement2</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="hall3.jpg" alt="Slide 9" />
+          <div class="caption">
+            <h2>Seminar Hall</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="IMG_4520.jpg" alt="Slide 10" />
+          <div class="caption">
+            <h2>Students</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="hmgrop.jpg" alt="Slide 11" />
+          <div class="caption">
+            <h2>Hotel Management</h2>
+          </div>
+        </div>
+      </div>
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+    <div class="container" id="about">
+      <h2>ABOUT HDC</h2>
+      <p>
+        Established in 2070 B.S., Himalaya Darshan College is a pioneering
+        institution that offers innovative opportunities within a highly
+        academic environment. Our objective is to provide value-based, quality
+        education at the undergrad- uate level. We prioritize the personal and
+        professional growth of our students, and achieve this through our
+        experienced and distinguished faculty, as well as experts and
+        professionals from across the nation. Our aim is to provide qualitative
+        and competitive educa- tion to young students and to tackle the
+        challenges of the present millennium. We offer a modern, values-based
+        curriculum across five degree programs in three disciplines: Science,
+        Management, and Humanities.
+      </p>
+    </div>
+
+    <!-- Collage labs , library and playgrouund -->
+    <div class="lslider-container">
+      <div class="lslide active">
+        <div class="limage-section">
+          <img src="dowm.jpg" alt="College Building" />
+        </div>
+        <div class="content-section">
+          <h1>Our Collage</h1>
+          <p>
+            Explore our various schools and institutes that offer diverse
+            programs to cater to a wide range of academic interests.
+          </p>
+        </div>
+      </div>
+      <div class="lslide">
+        <div class="limage-section">
+          <img src="library.jpg" alt="Library" />
+        </div>
+        <div class="content-section">
+          <h1>Our Library</h1>
+          <p>
+            Our library offers a wide range of books and resources to support
+            your studies and research.
+          </p>
+        </div>
+      </div>
+      <div class="lslide">
+        <div class="limage-section">
+          <img src="lab3.jpg" alt="Lab" />
+        </div>
+        <div class="content-section">
+          <h1>Our Lab</h1>
+          <p>
+            Our lab is equipped with state-of-the-art technology to support
+            hands-on learning and innovation.
+          </p>
+        </div>
+      </div>
+      <div class="lslide">
+        <div class="limage-section">
+          <img src="hall3.jpg" alt="Playground" />
+        </div>
+        <div class="content-section">
+          <h1>Our Seminar Hall</h1>
+          <p>
+            Our well-maintained playground is perfect for sports and relaxation.
+          </p>
+        </div>
+      </div>
+      <!-- Navigation Buttons -->
+      <button class="lprev" onclick="changeSlide2(-1)">&#10094;</button>
+      <button class="lnext" onclick="changeSlide2(1)">&#10095;</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero hidden">
+      <div class="hero-image">
+        <img src="chief.jpg" alt="Person Image" />
+      </div>
+      <div class="hero-text">
+        <h1>Message from Campus Chief:</h1>
+        <p>
+          Nowadays, educational institutions serve as more than just ameans of
+          acquiring information and knowledge. They provideopportunities for
+          individuals to come together and share theirthoughts and ideas. At
+          Himalaya Darshan, we strongly believe thatthe true power of education
+          lies in the collaboration betweenlearners rather than solely relying
+          on the knowledge of experts.Our institution provides a stress-free
+          learning environment thatpromotes creativity and critical thinking. We
+          have always beencommitted to guiding and shaping the minds of our
+          students in apositive way. Our main focus is on creating future
+          leaders who arepassionate about making a positive impact on the world.
+          As theCampus Chief of Himalaya Darshan, I am dedicated to ensuring
+          that our institution continues to uphold these values.
+        </p>
+        <pre>
+                    <h2>Bharat Sapkota
+Campus Chief</h2>
+                </pre>
+      </div>
+    </section>
+    <hr style="width: 95%; size: 2cm" />
+    <hr style="width: 95%; size: 2cm" />
+    <hr style="width: 95%; size: 2cm" />
+    <!-- Mission ANd vision -->
+    <section class="mission-vision-section">
+      <div class="container">
+        <div class="mission-vision-header">
+          <h2>Our Mission & Vision</h2>
+          <p>
+            Learn about our commitment and future aspirations for our community.
+          </p>
+        </div>
+        <div class="mission-vision-content">
+          <div class="mission animate-on-scroll">
+            <div class="icon">
+              <img src="mission.png" alt="Mission Icon" />
+            </div>
+            <h3>Our Mission</h3>
+            <p>
+              The mission of Himalaya Darshan College is to empower students to
+              become successful global citizens. We achieve this by providing
+              students with both theoretical and practical exposure in all areas
+              of study, thereby fostering academic and practical excellence. Our
+              institution values students as valuable assets and creates an
+              environment that enables them to meet industry standards. In
+              addition to academic excellence, we also strive to instill in our
+              students a mindset of critical thinking and a service-oriented
+              attitude. Our ultimate objective is to encourage excellence,
+              diversity, and engaged learning by providing a contemporary and
+              accessible education.
+            </p>
+          </div>
+          <div class="vision animate-on-scroll">
+            <div class="icon">
+              <img src="vision.jpeg" alt="Vision Icon" />
+            </div>
+            <h3>Our Vision</h3>
+            <p>
+              Himalaya Darshan College offers a comprehensive educational
+              experience that enhances both practical and theoretical abilities
+              of students and provides an outstanding opportunity for making a
+              positive impact on the world. It is a place where those who strive
+              for excellence and constantly seek improvement can find ample
+              opportunities to achieve their goals, which ultimately results in
+              creating a better life not only for themselves but also for their
+              community. At Himalaya Darshan College, we firmly believe in the
+              potential of our students and are committed to providing them with
+              the resources and support needed to realize their aspirations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- block for events -->
+    <div class="container">
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="admission.jpg" alt="Event 1" />
+          <h2>BCA</h2>
+          <a href="/bca/bca.html">More Details.....</a>
+        </div>
+        <div class="grid-item">
+          <img src="admin.jpg" alt="Event 2" />
+          <h2>BIM</h2>
+          <a href="/bim/bim.html">More Details.....</a>
+        </div>
+        <div class="grid-item">
+          <img src="admission1.jpg" alt="Event 3" />
+          <h2>BHM</h2>
+          <a href="/bhm/bhm.html">More Details.....</a>
+        </div>
+      </div>
+      <h1>Extra Activities</h1>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="/bca/gue.jpg" alt="Event 1" />
+          <h2>Guest Lectures</h2>
+        </div>
+        <div class="grid-item">
+          <img src="holi.jpg" alt="Event 2" />
+          <h2>Festival Holi</h2>
+        </div>
+        <div class="grid-item">
+          <img src="crismas.jpg" alt="Event 3" />
+          <h2>Christmas</h2>
+        </div>
+      </div>
+    </div>
+
+    <hr style="width: 95%; size: 2cm" />
+    <hr style="width: 95%; size: 2cm" />
+    <hr style="width: 95%; size: 2cm" />
+    <!-- Saying of Students -->
+    <section class="testimonials">
+      <h2 style="margin-top: -2px">What Our Students Say</h2>
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <div class="quote-icon">“</div>
+          <p>
+            Our BHM course is tailored for students aspiring to build a career
+            in the hospitality industry. The program covers all aspects of hotel
+            management, from front office operations to food and beverage
+            management. With a strong emphasis on practical training and
+            industry exposure, our BHM graduates are ready to excel in the
+            global hospitality sector
+          </p>
+          <div class="client-info">
+            <img src="7.jpg" alt="Client Image" />
+            <h3>Student</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="quote-icon">“</div>
+          <p>
+            Our BIM program combines the principles of information technology
+            and management, providing students with a solid foundation in both
+            fields. The curriculum is designed to develop critical thinking,
+            technical expertise, and management skills, preparing graduates for
+            leadership roles in the IT and business sectors.
+          </p>
+          <div class="client-info">
+            <img src="me.jpg" alt="Client Image" />
+            <h3>Student</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="quote-icon">“</div>
+          <p>
+            The BCA program focuses on the application of computer science in
+            various domains. Students are trained in software development,
+            database management, and networking, ensuring they are well-prepared
+            to meet the demands of the rapidly evolving tech industry. With
+            hands-on projects and real-world case studies, our BCA graduates are
+            equipped to tackle complex IT challenges.
+          </p>
+          <div class="client-info">
+            <img src="bhumi.jpg" alt="Client Image" />
+            <h3>Student</h3>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer starts  -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Media Partner</h3>
+          <ul>
+            <li><a href="https://ourbiratnagar.net/">Our Biratnagar</a></li>
+            <li>
+              <a href="https://www.hamrobiratnagar.com/">Hamro Biratnagar</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Get In Touch</h3>
+          <ul>
+            <li><a href="#">Contact BOD</a></li>
+            <li>
+              <a
+                href="https://www.google.com/maps/place/Himalaya+Darshan+College/@26.4484245,87.278221,17.25z/data=!4m6!3m5!1s0x39ef744969ab93ff:0xcdfeaa99bb5e0ce7!8m2!3d26.4484286!4d87.2784747!16s%2Fg%2F11bbyk6sh6?entry=ttu"
+                >Maps & Directions</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-logo">
+          <a href="https://tu.edu.np/" target="_blank"
+            ><img src="tu.png" alt="Tribhuwan University"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Himalayan Darshan College. All Rights Reserved</p>
+        <div class="social-media">
+          <a href="https://www.facebook.com/college.hdc/" target="_blank"
+            ><img src="fb.png" alt="Facebook" />Facebook</a
+          >
+          <a href="#" target="_blank"
+            ><img src="whatsapp.png" alt="whatsapp" />Whatsapp</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mission-vision-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f5f5f5 50%, #e3e9ff 50%);
+    text-align: center;
+}
+
+.mission-vision-header h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.mission-vision-header p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.mission-vision-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.mission, .vision {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mission:hover, .vision:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.icon img {
+    width: 160px;
+    margin-bottom: 20px;
+}
+
+.mission h3, .vision h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.mission p, .vision p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+}
+
+    </style>
+</head>
+<body>
+    <section class="mission-vision-section">
+    <div class="container">
+        <div class="mission-vision-header">
+            <h2>Our Mission & Vision</h2>
+            <p>Learn about our commitment and future aspirations for our community.</p>
+        </div>
+        <div class="mission-vision-content">
+            <div class="mission">
+                <div class="icon">
+                    <img src="Main/mission.png" alt="Mission Icon">
+                </div>
+                <h3>Our Mission</h3>
+                <p>To empower students with the knowledge, skills, and ethical values needed to thrive in an ever-changing world, while fostering a culture of innovation, leadership, and community engagement.</p>
+            </div>
+            <div class="vision">
+                <div class="icon">
+                    <img src="Main/vision.jpeg" alt="Vision Icon">
+                </div>
+                <h3>Our Vision</h3>
+                <p>To be a leading institution recognized globally for excellence in education, research, and community service, driving positive change and nurturing the leaders of tomorrow.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      font-family: Arial, sans-serif;
+    }
+  
+    th {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    td {
+      text-align: center;
+      padding: 8px;
+    }
+  
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  
+    th, td {
+      border: 1px solid #ddd;
+    }
+  
+    .semester-title {
+      background-color: #333;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      padding: 12px;
+    }
+  
+    .total-row {
+      font-weight: bold;
+      background-color: #e0e0e0;
+    }
+  </style>
+  
+  <table>
+    <tr>
+      <!-- Block 1: Semesters I and II -->
+      <td width="25%" valign="top">
+        <table>
+          <thead>
+            <tr><th colspan="3" class="semester-title">SEMESTER I</th></tr>
+            <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>IT231</td><td>Foundation of Information Technology</td><td>3</td></tr>
+            <tr><td>IT232</td><td>C Programming</td><td>3</td></tr>
+            <tr><td>ENG206</td><td>English I</td><td>3</td></tr>
+            <tr><td>MGT231</td><td>Foundation of Business Management</td><td>3</td></tr>
+            <tr><td>MTH204</td><td>Basic Mathematics</td><td>3</td></tr>
+            <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+          </tbody>
+        </table><br><br>
+  
+        <table>
+          <thead>
+            <tr><th colspan="3" class="semester-title">SEMESTER II</th></tr>
+            <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>IT233</td><td>Digital Logic</td><td>3</td></tr>
+            <tr><td>IT234</td><td>Object Oriented Programming with Java</td><td>3</td></tr>
+            <tr><td>IT235</td><td>Discrete Structure</td><td>3</td></tr>
+            <tr><td>ENG203</td><td>Business Communications</td><td>3</td></tr>
+            <tr><td>MGT241</td><td>Organizational Behavior and Human Resource Management</td><td>3</td></tr>
+            <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+          </tbody>
+        </table>
+      </td>
+  
+      <!-- Block 2: Semesters III and IV -->
+      <td width="25%" valign="top">
+        <table>
+          <thead>
+            <tr><th colspan="3" class="semester-title">SEMESTER III</th></tr>
+            <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>IT236</td><td>Microprocessor and Computer Architecture</td><td>3</td></tr>
+            <tr><td>IT237</td><td>Web Technology I</td><td>3</td></tr>
+            <tr><td>IT238</td><td>Data Structure and Algorithms</td><td>3</td></tr>
+            <tr><td>ACC201</td><td>Financial Accounting</td><td>3</td></tr>
+            <tr><td>STT201</td><td>Business Statistics</td><td>3</td></tr>
+            <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+          </tbody>
+        </table><br><br><br>
+  
+        <table>
+          <thead>
+            <tr><th colspan="3" class="semester-title">SEMESTER IV</th></tr>
+            <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>IT239</td><td>Web Technology II</td><td>3</td></tr>
+            <tr><td>IT240</td><td>Database Management System</td><td>3</td></tr>
+            <tr><td>IT241</td><td>Business Data Communication and Networking</td><td>3</td></tr>
+            <tr><td>IT242</td><td>Operating System</td><td>3</td></tr>
+            <tr><td>EC0206</td><td>Economics for Business</td><td>3</td></tr>
+            <tr><td>ACC202</td><td>Cost and Management Accounting</td><td>3</td></tr>
+            <tr class="total-row"><td colspan="3">Total: 18</td></tr>
+          </tbody>
+        </table>
+      </td>
+  
+      <!-- Block 3: Semesters V and VI -->
+      <td width="25%" valign="top">
+        <table>
+          <thead>
+            <tr><th colspan="3" class="semester-title">SEMESTER V</th></tr>
+            <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>IT242</td><td>Software Design and Development</td><td>3</td></tr>
+            <tr><td>IT243</td><td>Programming with Python</td><td>3</td></tr>
+            <tr><td>IT244</td><td>Information Security</td><td>3</td></tr>
+            <tr><td>IT228</td><td>Artificial Intelligence</td><td>3</td></tr>
+            <tr><td>MKT201</td><td>Fundamentals of Marketing</td><td>3</td></tr>
+            <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+          </tbody>
+        </table><br><br>
+  
+        <table>
+          <thead>
+            <tr><th colspan="3" class="semester-title">SEMESTER VI</th></tr>
+            <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>IT245</td><td>Business Information Systems</td><td>3</td></tr>
+            <tr><td>IT246</td><td>IT Ethics and Cyber Security</td><td>3</td></tr>
+            <tr><td>IT352</td><td>Project</td><td>3</td></tr>
+            <tr><td>FIN229</td><td>Fundamentals of Corporate Finance</td><td>3</td></tr>
+            <tr><td>MGT236</td><td>Business Environment</td><td>3</td></tr>
+            <tr><td>RCH201</td><td>Business Research Methods</td><td>3</td></tr>
+            <tr class="total-row"><td colspan="3">Total: 18</td></tr>
+          </tbody>
+        </table>
+      </td>
+  
+      <!-- Block 4: Semesters VII and VIII -->
+      <td width="25%" valign="top">
+        <table>
+          <thead>
+            <tr><th colspan="3" class="semester-title">SEMESTER VII</th></tr>
+            <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>IT247</td><td>E-commerce and Internet Marketing</td><td>3</td></tr>
+            <tr><td>SOC203</td><td>Sociology for Business Management</td><td>3</td></tr>
+            <tr><td>MGT205</td><td>Operations Management</td><td>3</td></tr>
+            <tr><td>IT351</td><td>Enterprise Resource Planning</td><td>3</td></tr>
+            <tr><td>MGT206</td><td>Entrepreneurship and Small Business Management</td><td>3</td></tr>
+            <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+          </tbody>
+        </table>
+  
+        <table>
+          <thead>
+            <tr><th colspan="3" class="semester-title">SEMESTER VIII</th></tr>
+            <tr><th>Course Code</th><th>Course Title</th><th>Credit Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>MGT207</td><td>Organizational Change and Development</td><td>3</td></tr>
+            <tr><td>IT350</td><td>Computer Information System Project</td><td>3</td></tr>
+            <tr><td>IT249</td><td>Data Mining</td><td>3</td></tr>
+            <tr><td>IT250</td><td>Cloud Computing</td><td>3</td></tr>
+            <tr><td>IT351</td><td>Internship</td><td>3</td></tr>
+            <tr class="total-row"><td colspan="3">Total: 15</td></tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+  
+</body>
